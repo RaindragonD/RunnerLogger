@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Rank/Rank",
+    "pages/totalRank/tRank"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "十一马帮打卡",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "打卡",
+        "iconPath": "images/打卡.png",
+        "selectedIconPath": "images/打卡1.png"
+      },
+      {
+        "pagePath": "pages/Rank/Rank",
+        "text": "排名",
+        "iconPath": "images/排名.png",
+        "selectedIconPath": "images/排名1.png"
+      },
+      {
+        "pagePath": "pages/totalRank/tRank",
+        "text": "数据",
+        "iconPath": "images/数据.png",
+        "selectedIconPath": "images/数据1.png"
+      }
+    ]
+  }
+}

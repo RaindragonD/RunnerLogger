@@ -1,0 +1,16 @@
+<body>
+<view class="table">
+  <view class="tr bg_header">
+    <view class="th" id = "ranking">排名</view>
+    <view class="th" id = "name">名称</view>
+    <view class="th" id = "distance">总里程</view>
+  </view>
+  <block wx:for="{{listData}}" wx:key="{{code}}">
+    <view class="tr">
+      <view class="td">{{item.index}}</view>
+      <view class="td">{{item.nickName}}</view>
+      <view class="td">{{item.distance}}</view>
+    </view>
+  </block>
+</view>
+</body>

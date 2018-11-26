@@ -1,0 +1,34 @@
+<!--index.wxml-->
+
+<view class="container">
+
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="../../images/标志.png" 
+    background-size="cover"></image>
+    <text class="userinfo-nickname">十一马帮 </text>
+  </view>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view style="margin-top: 30px;">
+    <input name="nick" class = "input" auto-focus value="{{nickName}}"
+     placeholder="大侠名字" />
+    <input name="dis" class = "input" type="digit" value="{{distance}}"
+     placeholder="跑步里程（km）" />
+  </view>
+
+  <picker class="input" name="speed" mode="time" 
+    value="5:00" start="03:00" end="8:00" bindchange="bindSpeedChange">
+    <view class="picker-text" style="color:{{pickerColor}}">
+      配速  {{speed}}
+    </view>
+  </picker>
+
+  <view style="margin-top: 30px;">
+      <button type="primary" class = "button" form-type="submit" 
+      disabled="{{disabled}}" >Confirm</button>
+      <button type="primary" class = "button" form-type="reset" 
+      disabled="{{disabled}}" >Reset</button>
+  </view> 
+</form>
+<view class="tip">{{tip}}</view>
+</view>
